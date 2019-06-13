@@ -1,0 +1,84 @@
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+body, html
+    font-size: 16px
+    background-color: papayawhip
+    scroll-behavior: smooth
+
+nav
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 8vh
+    background: red
+    ul
+        list-style-type: none
+        display: flex
+        li
+            padding-left: 1rem
+            a
+                text-decoration: none
+                color: black
+                transition: all 0.2s linear
+                padding: 0.5rem
+                &:hover
+                    color: white
+                    border-top: 1px solid white
+                    border-bottom: 1px solid hotpink
+
+section
+    display: flex
+    flex-direction: column
+    background: green
+    height: 92vh
+    .main-desc
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        margin: auto
+    h1
+        margin: 1rem auto
+    p
+        margin: 1rem auto
+        max-width: 800px
+
+.portfolio-container
+    background: white
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: auto
+    h1
+        margin: 2rem auto
+    .portfolio-grid
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-row-gap: 4rem
+        grid-column-gap: 4rem
+        width: 800px
+        div
+            background-image: url('https://source.unsplash.com/random')
+            background-size: cover
+            -webkit-clip-path: polygon(82% 0, 96% 65%, 79% 100%, 0 79%, 13% 7%)
+            clip-path: polygon(82% 0, 96% 65%, 79% 100%, 0 79%, 13% 7%)
+            border: 1px solid black
+            height: 200px
+
+.footer-container
+    height: 8vh
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: auto
+    a
+        text-decoration: none
+        padding: 1rem
+        transition: all 0.2s linear
+        &:hover
+            color: hotpink
+

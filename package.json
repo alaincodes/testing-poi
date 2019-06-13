@@ -1,0 +1,26 @@
+{
+  "name": "poi-app",
+  "version": "1.0.0",
+  "main": "index.html",
+  "author": "@alaincodes",
+  "license": "MIT",
+  "scripts": {
+    "build": "poi index.html --prod",
+    "dev": "poi index.html --serve"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "node-sass": "^4.12.0",
+    "poi": "^12.6.10",
+    "sass-loader": "^7.1.0"
+  },
+  "dependencies": {
+    "browserlist": "^1.0.1"
+  }
+}
